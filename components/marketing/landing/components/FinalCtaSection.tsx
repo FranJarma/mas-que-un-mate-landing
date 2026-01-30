@@ -3,6 +3,7 @@ import { PrimaryButton } from '@/components/shared/PrimaryButton'
 import { SecondaryButton } from '@/components/shared/SecondaryButton'
 import { FINAL_CTA_CONTENT } from '../constants/landingContent'
 import { ClientContactForm } from './ClientContactForm'
+import { Button } from '@/components/ui/button'
 
 export function FinalCtaSection() {
   return (
@@ -24,26 +25,26 @@ export function FinalCtaSection() {
         />
       </div>
 
-      <SectionContainer className="relative z-10 bg-transparent">
+      <SectionContainer className="relative z-10 bg-mate-primary">
         <div className="text-center">
-          <h2 className="text-mate-cream font-display text-4xl tracking-wider uppercase md:text-5xl lg:text-6xl text-balance">
+          <h2 className="text-black font-display text-4xl tracking-wider uppercase md:text-5xl lg:text-6xl text-balance">
             {FINAL_CTA_CONTENT.title}
           </h2>
-          <p className="mt-6 text-mate-cream/80 text-xl">
+          <p className="mt-6 text-black/80 text-xl">
             {FINAL_CTA_CONTENT.subtitle}
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <ClientContactForm 
               trigger={
-                <PrimaryButton size="lg" className="bg-mate-cream text-mate-primary hover:bg-white">
+                <PrimaryButton size="lg" className="bg-black text-mate-primary hover:bg-black/90">
                   Quiero participar
                 </PrimaryButton>
               }
             />
-            <SecondaryButton size="lg" href="#podcast" className="border-mate-cream text-mate-cream hover:bg-mate-cream hover:text-mate-primary">
+            <Button size="lg" variant="link" className="text-black">
               {FINAL_CTA_CONTENT.ctaPodcast}
-            </SecondaryButton>
+            </Button>
           </div>
         </div>
       </SectionContainer>

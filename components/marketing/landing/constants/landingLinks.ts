@@ -1,9 +1,9 @@
 import type { NavLink } from '../types/landingTypes'
 
 export const NAV_LINKS: NavLink[] = [
+  { label: 'La historia', href: '#historia' },
   { label: 'Podcast', href: '#podcast' },
   { label: 'Tienda', href: '#tienda' },
-  { label: 'La historia', href: '#historia' },
 ]
 
 export const SOCIAL_LINKS = {

@@ -12,7 +12,7 @@ export function Logo({ className = '' }: LogoProps) {
       aria-label="Mas que un mate - Ir al inicio"
     >
       <div className="flex flex-col">
-        <span className="font-display text-2xl md:text-3xl text-white tracking-wider leading-none group-hover:text-mate-cream transition-colors">
+        <span className="font-display text-2xl md:text-3xl text-white tracking-wider leading-none group-hover:text-mate-cream transition-colors hover:text-primary">
           +QUE UN MATE
         </span>
         <span className="text-xs md:text-sm text-white/80 tracking-widest uppercase">

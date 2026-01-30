@@ -5,6 +5,7 @@ import { SecondaryButton } from "@/components/shared/SecondaryButton";
 import { TypingHeadline } from "@/components/shared/TypingHeadline";
 import { HERO_CONTENT } from "../constants/landingContent";
 import { SOCIAL_LINKS } from "../constants/landingLinks";
+import { Button } from "@/components/ui/button";
 
 const TYPING_TEXTS = [
   "+ QUE UN MATE",
@@ -75,9 +76,9 @@ export function HeroSection() {
           <PrimaryButton size="lg" href="#podcast">
             {HERO_CONTENT.ctaPrimary}
           </PrimaryButton>
-          <SecondaryButton size="lg" href="#tienda">
+          <Button size="lg" is="link" variant="link" className="font-bold">
             {HERO_CONTENT.ctaSecondary}
-          </SecondaryButton>
+          </Button>
         </div>
 
         {/* Platform badges */}
