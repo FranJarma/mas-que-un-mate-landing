@@ -8,7 +8,7 @@ type PrimaryButtonProps = ComponentProps<typeof Button> & {
 
 export function PrimaryButton({ className, children, href, ...props }: PrimaryButtonProps) {
   const baseStyles = cn(
-    'bg-mate-primary hover:bg-mate-brown-light text-mate-cream',
+    'bg-mate-primary cursor-pointer hover:bg-mate-brown-light text-mate-cream',
     'font-semibold px-6 py-3 rounded-full transition-all duration-300',
     'hover:shadow-lg hover:shadow-mate-primary/20',
     className

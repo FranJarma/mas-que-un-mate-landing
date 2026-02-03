@@ -18,7 +18,7 @@ const buttonVariants = cva(
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-        link: 'text-primary underline-offset-4 hover:underline',
+        link: 'text-primary underline-offset-4 hover:underline cursor-pointer',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
@@ -36,22 +36,27 @@ const buttonVariants = cva(
   },
 )
 
+type ButtonProps = VariantProps<typeof buttonVariants> & {
+  asChild?: boolean
+  href?: string
+} & React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
+
 function Button({
   className,
   variant,
   size,
   asChild = false,
+  href,
   ...props
-}: React.ComponentProps<'button'> &
-  VariantProps<typeof buttonVariants> & {
-    asChild?: boolean
-  }) {
-  const Comp = asChild ? Slot : 'button'
+}: ButtonProps) {
+  const Comp = asChild ? Slot : href ? 'a' : 'button'
 
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
+      href={href}
       {...props}
     />
   )

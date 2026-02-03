@@ -16,9 +16,8 @@ const bebasNeue = Bebas_Neue({
 })
 
 export const metadata: Metadata = {
-  title: 'Más que un mate | Podcast y mates personalizados',
-  description: 'Charlas reales sobre emociones, decisiones y emprender. Mate de por medio. Escuchá el podcast y conocé nuestros mates artesanales.',
-  generator: 'v0.app',
+  title: '+ que un mate | Podcast y mates personalizados',
+  description: 'Podcast número 1 sobre gestión empresarial y emprendimiento en Salta, Argentina. Mate de por medio. Escuchá el podcast y conocé nuestros mates artesanales.',
   icons: {
     icon: [
       {
@@ -30,8 +29,8 @@ export const metadata: Metadata = {
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/favicon.png',
+        type: 'image/png',
       },
     ],
     apple: '/apple-icon.png',

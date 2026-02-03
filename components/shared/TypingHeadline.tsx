@@ -10,7 +10,7 @@ interface TypingHeadlineProps {
 export function TypingHeadline({ texts, className = '' }: TypingHeadlineProps) {
   const { displayText } = useTypingEffect({
     texts,
-    typingSpeed: 80,
+    typingSpeed: 150,
     deletingSpeed: 40,
     pauseDuration: 2500,
   })
@@ -20,7 +20,7 @@ export function TypingHeadline({ texts, className = '' }: TypingHeadlineProps) {
       <span className="sr-only">{texts.join(' - ')}</span>
       <span aria-hidden="true">
         {displayText}
-        <span className="inline-block w-[3px] h-[1em] bg-current ml-1 animate-pulse" />
+        <span className="inline-block w-0.75 h-[1em] bg-current ml-1 animate-pulse" />
       </span>
     </h1>
   )

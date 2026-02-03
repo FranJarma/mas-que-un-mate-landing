@@ -29,7 +29,7 @@ export function Header() {
   }, []);
 
   const headerClasses = isScrolled
-    ? "bg-mate-black/90 backdrop-blur-md shadow-sm border-b border-white/10"
+    ? "bg-mate-black/90 backdrop-blur-md shadow-sm"
     : "bg-transparent";
 
   return (
@@ -48,7 +48,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-white/80 hover:text-white transition-colors duration-200 font-medium text-sm uppercase tracking-wider"
+              className="text-white/80 hover:text-mate-primary transition-colors duration-200 font-medium text-sm uppercase tracking-wider"
             >
               {link.label}
             </a>

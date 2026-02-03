@@ -1,6 +1,5 @@
 import { SectionContainer } from '@/components/shared/SectionContainer'
 import { PrimaryButton } from '@/components/shared/PrimaryButton'
-import { SecondaryButton } from '@/components/shared/SecondaryButton'
 import { FINAL_CTA_CONTENT } from '../constants/landingContent'
 import { ClientContactForm } from './ClientContactForm'
 import { Button } from '@/components/ui/button'
@@ -8,24 +7,7 @@ import { Button } from '@/components/ui/button'
 export function FinalCtaSection() {
   return (
     <section className="relative overflow-hidden">
-      {/* Background with warm accent gradient */}
-      <div 
-        className="absolute inset-0 bg-mate-primary"
-        aria-hidden="true"
-      >
-        <div 
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(ellipse at 50% 100%, rgba(164, 113, 72, 0.4) 0%, transparent 60%),
-              radial-gradient(ellipse at 0% 50%, rgba(107, 62, 38, 0.8) 0%, transparent 50%),
-              radial-gradient(ellipse at 100% 50%, rgba(107, 62, 38, 0.8) 0%, transparent 50%)
-            `,
-          }}
-        />
-      </div>
-
-      <SectionContainer className="relative z-10 bg-mate-primary">
+      <SectionContainer className="relative z-10 bg-mate-brown-light">
         <div className="text-center">
           <h2 className="text-black font-display text-4xl tracking-wider uppercase md:text-5xl lg:text-6xl text-balance">
             {FINAL_CTA_CONTENT.title}
@@ -42,7 +24,7 @@ export function FinalCtaSection() {
                 </PrimaryButton>
               }
             />
-            <Button size="lg" variant="link" className="text-black">
+            <Button size="lg" href="#podcast" variant="link" className="text-black cursor-pointer">
               {FINAL_CTA_CONTENT.ctaPodcast}
             </Button>
           </div>

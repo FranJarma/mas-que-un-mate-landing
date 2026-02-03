@@ -9,7 +9,7 @@ type SecondaryButtonProps = ComponentProps<typeof Button> & {
 export function SecondaryButton({ className, children, href, ...props }: SecondaryButtonProps) {
   const baseStyles = cn(
     'border-0 bg-white text-mate-black',
-    'hover:bg-white/90',
+    'hover:bg-white/90 hover:text-mate-primary',
     'font-semibold px-6 py-3 rounded-full transition-all duration-300',
     className
   )

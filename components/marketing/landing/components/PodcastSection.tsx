@@ -6,11 +6,10 @@ import { SecondaryButton } from '@/components/shared/SecondaryButton'
 import { PODCAST_CONTENT } from '../constants/landingContent'
 import { SOCIAL_LINKS } from '../constants/landingLinks'
 
-// YouTube video IDs - replace with actual video IDs from the channel
 const YOUTUBE_VIDEOS = [
-  { id: 'dQw4w9WgXcQ', title: 'Episodio 1 - Emprender sin red' },
-  { id: 'dQw4w9WgXcQ', title: 'Episodio 2 - Salud mental y trabajo' },
-  { id: 'dQw4w9WgXcQ', title: 'Episodio 3 - Creatividad en crisis' },
+  { id: '3SJkgf65Xy4', title: '5 hábitos saludables que salvarán tu vida' },
+  { id: 'Gs_Ow9vnRJ4', title: '7 hábitos (reales) para tener el cuerpo de tus sueños' },
+  { id: '1fEbTxRW63s', title: 'Cómo superar una relación en pareja y ser tu mejor versión' },
 ]
 
 function YouTubeEmbed({ videoId, title }: { videoId: string; title: string }) {

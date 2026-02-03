@@ -2,7 +2,7 @@ import type { Episode, MateProduct } from '../types/landingTypes'
 
 export const HERO_CONTENT = {
   title: 'Mas que un mate',
-  subtitle: 'Charlas reales sobre emociones, decisiones y emprender. Mate de por medio. Escucha historias que inspiran y conecta con una comunidad que entiende.',
+  subtitle: 'Podcast número 1 sobre gestión empresarial y emprendimiento en Salta, Argentina. Mate de por medio. Escuchá el podcast y conocé nuestros mates artesanales.',
   ctaPrimary: 'Escuchar ahora',
   ctaSecondary: 'Ver los mates',
   trustBadge: 'Pago seguro con MercadoPago - Envios a todo el pais',
@@ -10,9 +10,11 @@ export const HERO_CONTENT = {
 
 export const RITUAL_CONTENT = {
   title: 'El ritual',
-  text: `El mate no es solo una infusion, es un momento. Es la pausa que elegimos hacer para conectar con nosotros mismos o con alguien mas.
-
-Aca creemos que las mejores conversaciones empiezan con un "te cebo uno?". Y de eso se trata: de compartir, de escuchar, de estar presente.`,
+  text: `El mate no es solo mate. Es la excusa para sentarse y estar un rato ahí.
+  A veces solo. A veces con alguien.
+  Creemos que las mejores charlas no se apuran. Empiezan con un “¿te cebo uno?” y siguen solas.
+  Porque no es un mate, es + Que un Mate.
+  `,
 }
 
 export const PODCAST_CONTENT = {
@@ -48,7 +50,7 @@ export const EPISODES: Episode[] = [
 
 export const MATES_CONTENT = {
   title: 'Los mates',
-  subtitle: 'Objetos con historia que acompanan la charla. Para usar, regalar o compartir.',
+  subtitle: 'Mates para frenar un poco. Para charlar, pensar, escuchar… o simplemente cebar otro.',
   ctaCatalog: 'Ver catalogo completo',
 }
 
@@ -78,7 +80,7 @@ export const MATE_PRODUCTS: MateProduct[] = [
 
 export const FINAL_CTA_CONTENT = {
   title: 'Sumate a la ronda',
-  subtitle: 'Escucha el podcast o llevate un mate con historia.',
+  subtitle: 'Escucha el Podcast o llevate un mate. ¿Y por que no ambas?',
   ctaPodcast: 'Escuchar podcast',
   ctaMates: 'Ver los mates',
 }

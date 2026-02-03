@@ -50,7 +50,7 @@ export function HeroSection() {
         loop
         playsInline
         preload="auto"
-        className="absolute inset-0 h-full w-full object-cover z-0 opacity-80"
+        className="absolute inset-0 h-full w-full object-cover z-0 opacity-50"
         aria-hidden="true"
         src="/hero.mp4"
       />
@@ -68,7 +68,7 @@ export function HeroSection() {
           className="text-mate-cream font-display text-5xl tracking-wider md:text-7xl lg:text-8xl text-balance leading-none min-h-[1.2em]"
         />
 
-        <p className="mt-8 text-mate-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-8 text-mate-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-semibold">
           {HERO_CONTENT.subtitle}
         </p>
 
@@ -76,7 +76,7 @@ export function HeroSection() {
           <PrimaryButton size="lg" href="#podcast">
             {HERO_CONTENT.ctaPrimary}
           </PrimaryButton>
-          <Button size="lg" is="link" variant="link" className="font-bold">
+          <Button size="lg" is="link" variant="link" className="font-bold cursor-pointer">
             {HERO_CONTENT.ctaSecondary}
           </Button>
         </div>
@@ -89,7 +89,7 @@ export function HeroSection() {
               href={SOCIAL_LINKS.spotify}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-mate-cream/70 hover:text-mate-brown-light transition-colors"
+              className="flex items-center gap-2 text-mate-cream/70 hover:text-mate-primary transition-colors"
               aria-label="Escuchar en Spotify"
             >
               <SpotifyIcon />
@@ -99,7 +99,7 @@ export function HeroSection() {
               href={SOCIAL_LINKS.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-mate-cream/70 hover:text-mate-brown-light transition-colors"
+              className="flex items-center gap-2 text-mate-cream/70 hover:text-mate-primary transition-colors"
               aria-label="Ver en YouTube"
             >
               <YouTubeIcon />
@@ -118,7 +118,7 @@ export function HeroSection() {
           <span className="text-mate-cream/40 text-xs uppercase tracking-[0.2em]">
             Descubri mas
           </span>
-          <div className="h-10 w-[1px] bg-gradient-to-b from-mate-cream to-transparent" />
+          <div className="h-10 w-px bg-linear-to-b from-mate-cream to-transparent" />
         </div>
       </div>
     </section>
